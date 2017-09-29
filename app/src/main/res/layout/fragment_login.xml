@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/niuniu"/>
+
+    <EditText
+        android:id="@+id/et_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/str_user_tips"
+        android:inputType="phone"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/str_password_tips"
+        android:inputType="textPassword"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/et_user"
+        tools:ignore="RtlHardcoded"/>
+
+    <TextView
+        android:id="@+id/tv_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/tips_reset"
+        android:textColor="@color/material_red"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"/>
+
+    <CheckBox
+        android:id="@+id/cb_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:text="@string/remember"
+        app:layout_constraintRight_toRightOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@id/tv_reset"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/str_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@id/et_password"
+        app:layout_constraintRight_toRightOf="@id/et_user"
+        app:layout_constraintTop_toBottomOf="@id/cb_remember"/>
+
+    <ImageView
+        android:id="@+id/iv_qq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintLeft_toLeftOf="@id/bt_login"
+        app:layout_constraintTop_toBottomOf="@id/bt_login"
+        app:srcCompat="@mipmap/ic_login_qq"/>
+
+    <ImageView
+        android:id="@+id/iv_weixin"
+        android:layout_width="25dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_qq"
+        app:layout_constraintLeft_toRightOf="@id/iv_qq"
+        app:layout_constraintTop_toTopOf="@id/iv_qq"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_login_weixin"/>
+
+    <ImageView
+        android:id="@+id/iv_weibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_weixin"
+        app:layout_constraintLeft_toRightOf="@id/iv_weixin"
+        app:layout_constraintTop_toTopOf="@id/iv_weixin"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/ic_login_weibo"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/str_regist"
+        app:layout_constraintRight_toRightOf="@id/bt_login"
+        app:layout_constraintTop_toTopOf="@id/iv_weibo"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gbq.myaccount.moduce.start.StartActivity">
+
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/skip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/start"/>
+
+
+    <com.gbq.myaccount.view.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/login_bg"/>
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/gap"
+        android:layout_marginTop="@dimen/cell_height"
+        android:text="@string/skip"
+        tools:ignore="RelativeOverlap"/>
+
+</RelativeLayout>
